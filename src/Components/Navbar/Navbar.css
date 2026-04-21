@@ -1,37 +1,55 @@
-.navbar{
+.navbar {
     /* border:2px solid red; */
-    display:flex;
-    justify-content:space-between;
-    margin:0 120px;
-    margin-top:40px;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 120px;
+    margin-top: 40px;
+    align-items: center;
 }
-.nav-logo{
-    color:gold;
-    font-size:50px;
-    font-weight:700;
+
+.nav-logo {
+    color: gold;
+    font-size: 50px;
+    font-weight: 700;
     transform: scale(1.2);
-    text-shadow:2px -2px 1px rgb(84, 74, 14),2px 2px 1px rgb(84, 74, 14);
+    text-shadow: 2px -2px 1px rgb(84, 74, 14), 2px 2px 1px rgb(84, 74, 14);
 }
-.nav-menu{
-    display:flex;
-    list-style:none;
-    gap:80px;
-    align-items:center;
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    align-items: center;
 }
-.nav-menu li{
-    color:gold;
-    cursor:pointer
+
+.nav-menu li {
+    color: gold;
+    cursor: pointer
 }
-.nav-menu li:hover{
+
+.nav-menu li:hover {
     transform: translateY(-4px);
-    transition:transform 0.3s;
+    transition: transform 0.3s;
 }
-#nav-contact{
-    background-color:gold;
-    padding:10px 26px;
-    border-radius:40px;
-    color:red;
-    font-weight:700;
-    border:0;
+
+#nav-contact {
+    background-color: gold;
+    padding: 10px 26px;
+    border-radius: 40px;
+    color: red;
+    font-weight: 700;
+    border: 0;
+}
+
+@media (max-width:480px) {
+    .navbar {
+        margin: 28px 40px;
+    }
+    .nav-logo {
+        font-size: 30px;
+        transform: scale(1.4);
+    }
+    .nav-menu{
+        display:none;
+    }
 }

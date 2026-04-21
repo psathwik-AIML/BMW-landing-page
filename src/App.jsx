@@ -13,15 +13,15 @@ function App(){
   // use state to hold video status 
   const[videoStatus,setVideoStatus]=useState(false)
   // use effect  
-  useEffect(()=>{
-    if(videoStatus) return
-    let i=setInterval(()=>{
-      setImageNumber((prev)=>prev==3?1:prev+1
-      )
-    },3000)
+  // useEffect(()=>{
+  //   if(videoStatus) return
+  //   let i=setInterval(()=>{
+  //     setImageNumber((prev)=>prev==3?1:prev+1
+  //     )
+  //   },3000)
 
-    return ()=>clearInterval(i)
-  },[videoStatus])
+  //   return ()=>clearInterval(i)
+  // },[videoStatus])
   return(
     <>
     <Background videoStatus={videoStatus} imageNumber={imageNumber}/>
